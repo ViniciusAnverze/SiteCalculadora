@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="caixa">
+
+        <h1>Calculadora</h1>
+
+        <form>
+            <input type="radio" id="adi" name="escolha" onclick="simbolo('mais')">
+            <label for="adi">Adição</label><br>
+
+            <input type="radio" id="sub" name="escolha" onclick="simbolo('menos')">
+            <label for="sub">Subtração</label><br>
+
+            <input type="radio" id="mul" name="escolha" onclick="simbolo('vezes')">
+            <label for="mul">Multiplicação</label>
+
+            <br>
+            <input type="radio" id="div" name="escolha" onclick="simbolo('dividido por')">
+            <label for="div">Divisão</label>
+        </form>
+
+        <input class="adicionar" type="number" id="n1">
+        <p id="simbolo"></p>
+        <input class="adicionar" type="number" id="n2">
+        <br>
+        <input style="margin-left: 265px; margin-top: 15px;" type="button" value="Calcular" onclick="calcular()">
+        <h1 id="resultado"></h1>
+
+        <script src="../javascript/script.js">
+            
+        </script>
+        
+    </div>
+
+</body>
+</html>
